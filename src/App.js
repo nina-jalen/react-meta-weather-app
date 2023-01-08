@@ -3,7 +3,6 @@ import "./App.css";
 // font awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // font awesome icons
-import { faLocationArrow } from "@fortawesome/free-solid-svg-icons";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 export default function App() {
@@ -41,10 +40,10 @@ export default function App() {
 							<div className="current-temperature"></div>
 						</div>
 					</div>
-					<a href="#" className="celsius-description active">
+					<a href="/" className="celsius-description active">
 						°C
 					</a>
-					<a href="#" className="fahrenheit-description">
+					<a href="/" className="fahrenheit-description">
 						°F
 					</a>
 					<div className="wind-description">
@@ -64,6 +63,7 @@ export default function App() {
 					<a
 						href="https://github.com/nina-jalen/react-weather-app-project"
 						target="_blank"
+						rel="noreferrer"
 						className="web-link"
 					>
 						Open-source code
@@ -72,6 +72,7 @@ export default function App() {
 					<a
 						href="https://nina-jalen.github.io/"
 						target="_blank"
+						rel="noreferrer"
 						className="web-link"
 					>
 						Nina Jalen
