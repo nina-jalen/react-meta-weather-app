@@ -1,11 +1,24 @@
 /* google fonts */
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Jost:wght@400;500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Jost:wght@400;500;600;700&display=swap");
+
+:root {
+	/* fonts */
+	--first-font-family: "DM Sans", sans-serif;
+	--second-font-family: "Jost", sans-serif;
+
+	/* colors */
+	--light-color: rgba(245, 245, 245);
+	--text-color: rgba(97, 97, 97);
+	--dark-color: rgba(66, 66, 66);
+	--background-color: rgba(40, 40, 40);
+	--container-color: rgba(31, 31, 31);
+	--gradient-start: rgb(245, 98, 224);
+	--gradient-end: rgb(45, 108, 255);
+}
 
 body {
-	/* font-family: "Jost", sans-serif; */
-	/* font-family: "Work Sans", sans-serif; */
-	font-family: "DM Sans", sans-serif;
-	background-color: #4a4a4a;
+	font-family: var(--first-font-family);
+	background-color: var(--background-color);
 }
 
 .container {
@@ -16,88 +29,61 @@ body {
 }
 
 .weather-container {
+	background-color: var(--container-color);
 	max-width: 785px;
 	margin: 20px 0 5px 0;
 	padding: 20px 30px;
 	border-radius: 25px;
-	background-color: #1f1f1f;
 }
 
-input {
-	display: inline;
-}
-
-.search-bar input {
-	background-color: #282828;
-	color: #f5f5f5;
+form input {
+	background-color: var(--background-color);
 	font-weight: 400;
 	font-size: 15px;
 	border-radius: 30px;
-	padding-left: 20px;
+	padding-left: 15px;
 	border-style: none;
 	width: 240px;
-	height: 40px;
-	opacity: 1;
+	height: 35px;
 }
 
-.search-button {
+form button {
 	background: linear-gradient(
 		90deg,
-		rgb(245, 98, 224) 0%,
-		rgb(45, 108, 255) 100%
+		var(--gradient-start) 0%,
+		var(--gradient-end) 100%
 	);
 	border-style: none;
 	border-radius: 30px;
 	margin-left: -45px;
 	width: 35px;
 	height: 25px;
-	padding: 1px;
-}
-
-.location-button {
-	background: none;
-	border-style: none;
-	line-height: 0;
-	padding: 0;
-	margin: 0 0 0 7px;
-}
-
-.location-icon {
-	font-size: 20px;
-	right: 277px;
-	top: 2px;
-	margin: 0;
-	padding: 0;
-	position: relative;
-	color: #f5f5f5;
 }
 
 .city-name {
-	font-family: "Jost", sans-serif;
+	font-family: var(--second-font-family);
+	color: var(--light-color);
 	display: inline-block;
-	color: #f5f5f5;
 	text-transform: capitalize;
 	font-size: 45px;
 	font-weight: 500;
-	letter-spacing: 5px;
+	letter-spacing: 0.15em;
 	line-height: 1.1;
 	margin-top: 20px;
-	margin-bottom: 0;
+	margin-right: 5px;
 }
 
 .country-name {
-	font-family: "Jost", sans-serif;
-	color: #4a4a4a;
+	font-family: var(--second-font-family);
+	color: var(--dark-color);
 	font-size: 30px;
 	font-weight: 500;
 	letter-spacing: 0.1em;
 	line-height: 1.1;
-	margin: 20px 0 5px 0;
-	opacity: 1;
 }
 
 .current-date {
-	color: #848484;
+	color: var(--text-color);
 	font-size: 14px;
 	font-weight: 400;
 	margin: 3px 0 30px 0;
@@ -159,7 +145,6 @@ input {
 }
 
 .current-temperature {
-	font-family: "Jost";
 	text-align: left;
 	color: #f5f5f5;
 	font-size: 110px;
@@ -207,29 +192,6 @@ input {
 	text-decoration: none;
 }
 
-.wind-description {
-	display: inline;
-	color: #848484;
-	font-size: 14px;
-	font-weight: 400;
-	background-color: #282828;
-	margin: 0 0 0 10px;
-	padding: 4px 10px;
-	opacity: 0.97;
-	border-style: none;
-	border-radius: 20px;
-}
-
-.wind-value {
-	display: inline;
-	color: #f5f5f5;
-	font-size: 14px;
-	font-weight: 400;
-	opacity: 0.97;
-	margin: 0;
-	padding-left: 4px;
-}
-
 .forecast-text {
 	color: #f5f5f5;
 	text-align: left;
@@ -237,13 +199,6 @@ input {
 	font-weight: 400;
 	letter-spacing: 1.2px;
 	margin: 25px 0 5px 0;
-}
-
-.row-weather-forecast {
-	background: none;
-	border-radius: 20px;
-	margin: 5px 0 0 0;
-	padding: 0;
 }
 
 .weather-forecast .col-md {
@@ -276,7 +231,6 @@ input {
 }
 
 .weather-forecast .card-day {
-	font-family: "DM sans";
 	text-align: center;
 	font-size: 14px;
 	font-weight: 500;
@@ -285,7 +239,6 @@ input {
 }
 
 .weather-forecast .card-temperature {
-	font-family: "DM Sans";
 	text-align: center;
 	font-size: 13px;
 	font-weight: 400;
@@ -307,7 +260,6 @@ footer {
 	color: #000;
 	font-size: 8px;
 	font-weight: 300;
-	font-family: "DM Sans";
 	letter-spacing: 1px;
 	margin: 0 0 0 20px;
 	padding: 0;

@@ -13,31 +13,36 @@ export default function App() {
 				<div className="weather-container">
 					{/* search bar */}
 					<form>
-						<div className="search-bar">
-							<input
-								type="search"
-								placeholder="Search city"
-								autoComplete="off"
+						<input
+							type="search"
+							placeholder="Search city"
+							autoComplete="off"
+						/>
+						<button type="submit" className="search-button">
+							<FontAwesomeIcon
+								icon={faMagnifyingGlass}
+								color="white"
+								opacity={0.8}
 							/>
-							<button type="submit" className="search-button">
-								<FontAwesomeIcon
-									icon={faMagnifyingGlass}
-									color="white"
-								/>
-							</button>
-						</div>
+						</button>
 					</form>
-					<div className="city-name"></div>
-					<span className="country-name"></span>
-					<div className="current-date"></div>
+					<div className="city-name">Innsbruck</div>
+					<span className="country-name">AT</span>
+					<div className="current-date">Sunday 8 Jan&nbsp; 18:39</div>
 					{/* current weather */}
 					<div className="row justify-content-start current-weather-row">
 						<div className="col-3 weather-icon-box">
-							<img src="" alt="" className="current-icon" />
+							<img
+								src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/895/original/clouds-and-sun.png?1673199874"
+								alt="Weather icon"
+								className="current-icon"
+							/>
 						</div>
 						<div className="col-3 current-temperature-box">
-							<div className="weather-description"></div>
-							<div className="current-temperature"></div>
+							<div className="weather-description">
+								Broken clouds
+							</div>
+							<div className="current-temperature">26°</div>
 						</div>
 					</div>
 					<a href="/" className="celsius-description active">
@@ -46,13 +51,58 @@ export default function App() {
 					<a href="/" className="fahrenheit-description">
 						°F
 					</a>
-					<div className="wind-description">
-						Wind speed
-						<div className="wind-value"></div>
-					</div>
 					{/* weather forecast */}
 					<div className="forecast-text">Next 7 Days</div>
-					<div className="weather-forecast"></div>
+					<div className="weather-forecast">
+						<div class="col-md">
+							<div class="card">
+								<div class="card-body">
+									<h5 class="card-day">Mon</h5>
+									<p
+										class="card-temperature"
+										id="forecast-max${index}"
+									>
+										6°
+									</p>
+									<img
+										src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/895/original/clouds-and-sun.png?1673199874"
+										alt="Weather icon"
+										class="forecast-icon"
+									/>
+									<p
+										class="card-temperature"
+										id="forecast-min${index}"
+									>
+										-3°
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md">
+							<div class="card">
+								<div class="card-body">
+									<h5 class="card-day">Mon</h5>
+									<p
+										class="card-temperature"
+										id="forecast-max${index}"
+									>
+										6°
+									</p>
+									<img
+										src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/895/original/clouds-and-sun.png?1673199874"
+										alt="Weather icon"
+										class="forecast-icon"
+									/>
+									<p
+										class="card-temperature"
+										id="forecast-min${index}"
+									>
+										-3°
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 				<footer>
 					<img
