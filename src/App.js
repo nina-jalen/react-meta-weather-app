@@ -54,51 +54,31 @@ export default function App() {
 					{/* weather forecast */}
 					<div className="forecast-text">Next 7 Days</div>
 					<div className="weather-forecast">
-						<div class="col-md">
-							<div class="card">
-								<div class="card-body">
-									<h5 class="card-day">Mon</h5>
-									<p
-										class="card-temperature"
-										id="forecast-max${index}"
-									>
-										6°
-									</p>
+						<div className="col-md">
+							<div className="card">
+								<div className="card-body">
+									<h5 className="card-day">Mon</h5>
+									<p className="card-temperature">6°</p>
 									<img
 										src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/895/original/clouds-and-sun.png?1673199874"
 										alt="Weather icon"
-										class="forecast-icon"
+										className="forecast-icon"
 									/>
-									<p
-										class="card-temperature"
-										id="forecast-min${index}"
-									>
-										-3°
-									</p>
+									<p className="card-temperature">-3°</p>
 								</div>
 							</div>
 						</div>
-						<div class="col-md">
-							<div class="card">
-								<div class="card-body">
-									<h5 class="card-day">Mon</h5>
-									<p
-										class="card-temperature"
-										id="forecast-max${index}"
-									>
-										6°
-									</p>
+						<div className="col-md">
+							<div className="card">
+								<div className="card-body">
+									<h5 className="card-day">Mon</h5>
+									<p className="card-temperature">6°</p>
 									<img
 										src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/895/original/clouds-and-sun.png?1673199874"
 										alt="Weather icon"
-										class="forecast-icon"
+										className="forecast-icon"
 									/>
-									<p
-										class="card-temperature"
-										id="forecast-min${index}"
-									>
-										-3°
-									</p>
+									<p className="card-temperature">-3°</p>
 								</div>
 							</div>
 						</div>
