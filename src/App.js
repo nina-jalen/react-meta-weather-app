@@ -85,32 +85,76 @@ export default function App() {
 					</a>
 					{/* weather forecast */}
 					<div className="forecast-text">Next 7 Days</div>
-					<div className="weather-forecast">
-						<div className="col-md">
-							<div className="card">
-								<div className="card-body">
-									<h5 className="card-day">Mon</h5>
-									<p className="card-temperature">6°</p>
-									<img
-										src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/895/original/clouds-and-sun.png?1673199874"
-										alt="Weather icon"
-										className="forecast-icon"
-									/>
-									<p className="card-temperature">-3°</p>
+					<div className="forecast">
+						<div className="row">
+							<div className="col">
+								<div className="card">
+									<div className="card-body">
+										<h5 className="day">Mon</h5>
+										<p className="temperature">6°</p>
+										<img
+											src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/895/original/clouds-and-sun.png?1673199874"
+											alt="Weather icon"
+											className="icon"
+										/>
+										<p className="temperature">-3°</p>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div className="col-md">
-							<div className="card">
-								<div className="card-body">
-									<h5 className="card-day">Mon</h5>
-									<p className="card-temperature">6°</p>
-									<img
-										src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/895/original/clouds-and-sun.png?1673199874"
-										alt="Weather icon"
-										className="forecast-icon"
-									/>
-									<p className="card-temperature">-3°</p>
+							<div className="col">
+								<div className="card">
+									<div className="card-body">
+										<h5 className="day">Tue</h5>
+										<p className="temperature">6°</p>
+										<img
+											src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/895/original/clouds-and-sun.png?1673199874"
+											alt="Weather icon"
+											className="icon"
+										/>
+										<p className="temperature">-3°</p>
+									</div>
+								</div>
+							</div>
+							<div className="col">
+								<div className="card">
+									<div className="card-body">
+										<h5 className="day">Wed</h5>
+										<p className="temperature">6°</p>
+										<img
+											src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/895/original/clouds-and-sun.png?1673199874"
+											alt="Weather icon"
+											className="icon"
+										/>
+										<p className="temperature">-3°</p>
+									</div>
+								</div>
+							</div>
+							<div className="col">
+								<div className="card">
+									<div className="card-body">
+										<h5 className="day">Thu</h5>
+										<p className="temperature">6°</p>
+										<img
+											src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/895/original/clouds-and-sun.png?1673199874"
+											alt="Weather icon"
+											className="icon"
+										/>
+										<p className="temperature">-3°</p>
+									</div>
+								</div>
+							</div>
+							<div className="col">
+								<div className="card">
+									<div className="card-body">
+										<h5 className="day">Fri</h5>
+										<p className="temperature">6°</p>
+										<img
+											src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/895/original/clouds-and-sun.png?1673199874"
+											alt="Weather icon"
+											className="icon"
+										/>
+										<p className="temperature">-3°</p>
+									</div>
 								</div>
 							</div>
 						</div>
