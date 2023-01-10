@@ -39,10 +39,14 @@ export default function App() {
 							/>
 						</div>
 						<div className="col m-0 p-0">
+							<div className="current-temperature d-flex">
+								<span className="value">26</span>
+								<span className="unit">°C</span>
+								<span className="unit">°F</span>
+							</div>
 							<div className="weather-description">
 								Broken clouds
 							</div>
-							<div className="current-temperature">26°</div>
 						</div>
 						<div className="col-6 m-0 p-0 ">
 							<div className="row row-cols-3 m-0 p-0 row-child">
@@ -147,6 +151,20 @@ export default function App() {
 								<div className="card">
 									<div className="card-body">
 										<h5 className="day">Fri</h5>
+										<p className="temperature">6°</p>
+										<img
+											src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/895/original/clouds-and-sun.png?1673199874"
+											alt="Weather icon"
+											className="icon"
+										/>
+										<p className="temperature">-3°</p>
+									</div>
+								</div>
+							</div>
+							<div className="col">
+								<div className="card">
+									<div className="card-body">
+										<h5 className="day">Sat</h5>
 										<p className="temperature">6°</p>
 										<img
 											src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/895/original/clouds-and-sun.png?1673199874"

@@ -7,8 +7,8 @@
 	--second-font-family: "Jost", sans-serif;
 
 	/* colors */
-	--light-color: rgba(245, 245, 245);
-	--text-color: rgba(97, 97, 97);
+	--light-color: rgba(245, 245, 245, 0.9);
+	--text-color: rgba(97, 97, 97, 0.9);
 	--dark-color: rgba(66, 66, 66);
 	--footer-color: rgba(0, 0, 0, 0.9);
 	--background-color: rgba(40, 40, 40);
@@ -22,19 +22,17 @@ body {
 	background-color: var(--background-color);
 }
 
-.container {
+.App {
 	max-width: 785px;
-	width: 100%;
 	margin: 35px auto;
 	padding: 0 20px;
 }
 
 .weather-container {
 	background-color: var(--container-color);
-	max-width: 785px;
-	margin: 20px 0 5px 0;
-	padding: 20px 30px;
 	border-radius: 25px;
+	padding: 20px 30px;
+	margin-bottom: 5px;
 }
 
 form input {
@@ -89,7 +87,6 @@ form button {
 	font-weight: 400;
 	margin-bottom: 20px;
 	line-height: 1.4;
-	opacity: 0.9;
 }
 
 /* current row */
@@ -129,7 +126,6 @@ form button {
 	color: var(--light-color);
 	text-transform: lowercase;
 	font-size: 13px;
-	opacity: 0.95;
 	line-height: 1;
 }
 
@@ -137,32 +133,40 @@ form button {
 	color: var(--light-color);
 	text-transform: capitalize;
 	font-size: 13px;
-	opacity: 0.95;
 	line-height: 1;
 }
 
 .current-temperature {
+	display: inline-flex;
+	flex-direction: row;
+	align-content: flex-start;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: nowrap;
+}
+
+.current-temperature .value {
 	color: var(--light-color);
 	font-size: 100px;
-	opacity: 0.9;
+	line-height: 1;
+}
+
+.current-temperature .unit {
+	color: var(--light-color);
+	font-size: 20px;
 	line-height: 1;
 }
 
 .data-value {
-	font-family: var(--first-font-family);
-	/* font-family: var(--second-font-family); */
 	color: var(--light-color);
 	text-transform: lowercase;
 	font-size: 18px;
-	opacity: 0.9;
 	line-height: 1;
 }
 
 .data-description {
-	font-family: var(--first-font-family);
 	color: var(--light-color);
 	font-size: 12px;
-	opacity: 0.9;
 	line-height: 1.4;
 }
 
