@@ -28,21 +28,53 @@ export default function App() {
 					</form>
 					<div className="city-name">Innsbruck</div>
 					<span className="country-name">AT</span>
-					<div className="current-date">Sunday 8 Jan&nbsp; 18:39</div>
+					<div className="date">Sunday 8 Jan&nbsp; 18:39</div>
 					{/* current weather */}
-					<div className="row justify-content-start current-weather-row">
-						<div className="col-3 weather-icon-box">
+					<div className="row m-0 p-0 row-parent">
+						<div className="col m-0 p-0">
 							<img
 								src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/895/original/clouds-and-sun.png?1673199874"
 								alt="Weather icon"
 								className="current-icon"
 							/>
 						</div>
-						<div className="col-3 current-temperature-box">
+						<div className="col m-0 p-0">
 							<div className="weather-description">
 								Broken clouds
 							</div>
 							<div className="current-temperature">26°</div>
+						</div>
+						<div className="col-6 m-0 p-0 ">
+							<div className="row row-cols-3 m-0 p-0 row-child">
+								<div className="col m-0 p-0">
+									<div className="data-value">17°</div>
+									<div className="data-description">High</div>
+								</div>
+								<div className="col m-0 p-0">
+									<div className="data-value">9mph</div>
+									<div className="data-description">Wind</div>
+								</div>
+								<div className="col m-0 p-0">
+									<div className="data-value">06:23</div>
+									<div className="data-description">
+										Sunrise
+									</div>
+								</div>
+								<div className="col m-0 p-0">
+									<div className="data-value">10°</div>
+									<div className="data-description">Low</div>
+								</div>
+								<div className="col m-0 p-0">
+									<div className="data-value">25%</div>
+									<div className="data-description">Rain</div>
+								</div>
+								<div className="col m-0 p-0">
+									<div className="data-value">18:46</div>
+									<div className="data-description">
+										Sunset
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 					<a href="/" className="celsius-description active">
