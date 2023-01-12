@@ -30,15 +30,15 @@ export default function App() {
 					<span className="country-name">AT</span>
 					<div className="date">Sunday 8 Jan&nbsp; 18:39</div>
 					{/* current weather */}
-					<div className="row m-0 p-0 row-parent">
-						<div className="col m-0 p-0">
+					<div className="row m-0 p-0 justify-content-start row-parent">
+						<div className="col-auto m-0 p-0">
 							<img
 								src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/895/original/clouds-and-sun.png?1673199874"
 								alt="Weather icon"
 								className="current-icon"
 							/>
 						</div>
-						<div className="col m-0 p-0">
+						<div className="col-auto m-0 p-0">
 							<div className="current-temperature d-flex">
 								<span className="value">26</span>
 								<span className="unit-c">°C&nbsp;</span>
@@ -48,17 +48,33 @@ export default function App() {
 								Broken clouds
 							</div>
 						</div>
-						<div className="col-6 m-0 p-0 ">
-							<div className="row row-cols-3 m-0 p-0 row-child">
-								<div className="col m-0 p-0">
-									<div className="data-value">9mph</div>
-									<div className="data-description">Wind</div>
-								</div>
-								<div className="col m-0 p-0">
-									<div className="data-value">25%</div>
-									<div className="data-description">Rain</div>
-								</div>
-							</div>
+					</div>
+					<div class="row row-cols-2 d-flex justify-content-start m-0 p-0">
+						<div
+							className="col m-0 p-0
+						 data-value"
+						>
+							9mph
+						</div>
+						<div
+							className="col m-0 p-0
+						 data-value"
+						>
+							25%
+						</div>
+					</div>
+					<div class="row row-cols-2 d-flex justify-content-start  m-0 p-0">
+						<div
+							className="col m-0 p-0
+						 data-description mb-1"
+						>
+							Wind
+						</div>
+						<div
+							className="col m-0 p-0
+						 data-description"
+						>
+							Rain
 						</div>
 					</div>
 					{/* weather forecast */}
