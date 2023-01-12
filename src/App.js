@@ -41,8 +41,8 @@ export default function App() {
 						<div className="col m-0 p-0">
 							<div className="current-temperature d-flex">
 								<span className="value">26</span>
-								<span className="unit">°C</span>
-								<span className="unit">°F</span>
+								<span className="unit-c">°C&nbsp;</span>
+								<span className="unit-f">°F</span>
 							</div>
 							<div className="weather-description">
 								Broken clouds
@@ -51,44 +51,18 @@ export default function App() {
 						<div className="col-6 m-0 p-0 ">
 							<div className="row row-cols-3 m-0 p-0 row-child">
 								<div className="col m-0 p-0">
-									<div className="data-value">17°</div>
-									<div className="data-description">High</div>
-								</div>
-								<div className="col m-0 p-0">
 									<div className="data-value">9mph</div>
 									<div className="data-description">Wind</div>
-								</div>
-								<div className="col m-0 p-0">
-									<div className="data-value">06:23</div>
-									<div className="data-description">
-										Sunrise
-									</div>
-								</div>
-								<div className="col m-0 p-0">
-									<div className="data-value">10°</div>
-									<div className="data-description">Low</div>
 								</div>
 								<div className="col m-0 p-0">
 									<div className="data-value">25%</div>
 									<div className="data-description">Rain</div>
 								</div>
-								<div className="col m-0 p-0">
-									<div className="data-value">18:46</div>
-									<div className="data-description">
-										Sunset
-									</div>
-								</div>
 							</div>
 						</div>
 					</div>
-					<a href="/" className="celsius-description active">
-						°C
-					</a>
-					<a href="/" className="fahrenheit-description">
-						°F
-					</a>
 					{/* weather forecast */}
-					<div className="forecast-text">Next 7 Days</div>
+					<div className="forecast-text my-2">Next 7 Days</div>
 					<div className="forecast">
 						<div className="row">
 							<div className="col">

@@ -23,7 +23,7 @@ body {
 }
 
 .App {
-	max-width: 785px;
+	max-width: 725px;
 	margin: 35px auto;
 	padding: 0 20px;
 }
@@ -42,7 +42,7 @@ form input {
 	border-radius: 30px;
 	padding-left: 15px;
 	border-style: none;
-	width: 240px;
+	width: 260px;
 	height: 35px;
 }
 
@@ -89,18 +89,9 @@ form button {
 	line-height: 1.4;
 }
 
-/* current row */
+/* parent row */
 
 .row-parent {
-	background-color: lightblue;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-content: center;
-	justify-content: space-between;
-	align-items: flex-start;
-}
-
-.row-child {
 	background-color: lightblue;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -117,7 +108,7 @@ form button {
 
 .current-icon {
 	display: block;
-	/* margin: 0 auto; */
+	margin: 0 auto;
 	/* max-width: 100%; */
 	height: 110px;
 }
@@ -151,15 +142,35 @@ form button {
 	line-height: 1;
 }
 
-.current-temperature .unit {
+.current-temperature .unit-c {
 	color: var(--light-color);
 	font-size: 20px;
 	line-height: 1;
 }
 
+.current-temperature .unit-f {
+	color: var(--text-color);
+	font-size: 20px;
+	line-height: 1;
+}
+
+/* child row data */
+
+.row-child {
+	background-color: lightblue;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.row-child .col {
+	background-color: lightpink;
+}
+
 .data-value {
 	color: var(--light-color);
-	text-transform: lowercase;
 	font-size: 18px;
 	line-height: 1;
 }
@@ -172,7 +183,7 @@ form button {
 
 /* celsius */
 
-.celsius-description {
+/* .celsius-description {
 	color: #848484;
 	font-size: 14px;
 	line-height: 1.9;
@@ -209,7 +220,7 @@ form button {
 .active:hover {
 	color: #f5f5f5;
 	text-decoration: none;
-}
+} */
 
 /* forecast text */
 
