@@ -8,42 +8,7 @@ export default function App() {
 			<div className="container">
 				<div className="weather-container">
 					<Weather defaultCity="Innsbruck" />
-					{/* search bar */}
-					<div className="city-name">Innsbruck</div>
-					<span className="country-name">AT</span>
-					<div className="date">Sunday 8 Jan&nbsp; 18:39</div>
-					{/* current weather */}
-					<div className="row justify-content-start m-0 p-0 row-parent">
-						<div className="col-auto m-0 p-0">
-							<img
-								src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/895/original/clouds-and-sun.png?1673199874"
-								alt="Weather icon"
-								className="current-icon"
-							/>
-						</div>
-						<div className="col-auto ms-3 p-0">
-							<div className="current-temperature d-flex">
-								<span className="value">26</span>
-								<span className="unit-c ">
-									<a href="/">°C</a>
-								</span>
-								<span className="unit-f ms-1">
-									<a href="/">°F</a>
-								</span>
-							</div>
-							<div className="weather-description">
-								Broken clouds
-							</div>
-						</div>
-						<div className="col-auto ms-4 p-0 d-none d-md-block">
-							<div className="data-value">9mph</div>
-							<div className="data-description">Wind</div>
-						</div>
-						<div className="col-auto ms-3 p-0 d-none d-md-block">
-							<div className="data-value">87%</div>
-							<div className="data-description mb-1">Humidity</div>
-						</div>
-					</div>
+					
 					{/* forecast */}
 					<div className="forecast-text mt-3 mb-2">Next 7 Days</div>
 					<div className="forecast">

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import WeatherInfo from "./WeatherInfo";
 import axios from "axios";
 import "./Weather.css";
 // font awesome
@@ -18,6 +19,7 @@ export default function Weather(props) {
 			humidity: response.data.main.humidity,
 			wind: response.data.wind.speed,
 			city: response.data.name,
+			country: response.data.sys.country,
 			description: response.data.weather[0].description,
 			icon: response.data.weather[0].icon,
 			coordinates: response.data.coord,
@@ -58,6 +60,7 @@ export default function Weather(props) {
 						/>
 					</button>
 				</form>
+				<WeatherInfo data={weatherData} />
 			</div>
 		);
 	} else {
