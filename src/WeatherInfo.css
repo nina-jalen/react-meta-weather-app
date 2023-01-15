@@ -1,0 +1,253 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&family=Jost:wght@400;500;600;700&display=swap");
+
+:root {
+	/* fonts */
+	--first-font-family: "DM Sans", sans-serif;
+	--second-font-family: "Jost", sans-serif;
+
+	/* colors */
+	--light-color: rgba(245, 245, 245, 0.9);
+	--text-color: rgba(97, 97, 97, 0.9);
+	--dark-color: rgba(66, 66, 66);
+	--footer-color: rgba(0, 0, 0, 0.9);
+	--background-color: rgba(40, 40, 40);
+	--container-color: rgba(31, 31, 31);
+	--gradient-start: rgb(245, 98, 224);
+	--gradient-end: rgb(45, 108, 255);
+}
+
+.city-name {
+	font-family: var(--second-font-family);
+	color: var(--light-color);
+	display: inline-block;
+	text-transform: capitalize;
+	font-size: 45px;
+	font-weight: 500;
+	letter-spacing: 0.15em;
+	line-height: 1.1;
+	margin-top: 20px;
+	margin-right: 5px;
+}
+
+.country-name {
+	font-family: var(--second-font-family);
+	color: var(--dark-color);
+	font-size: 30px;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+	line-height: 1.1;
+}
+
+.FormattedDate {
+	color: var(--text-color);
+	font-size: 14px;
+	font-weight: 400;
+	margin-bottom: 20px;
+	line-height: 1.4;
+}
+
+/* parent row */
+
+.row-parent {
+	/* background-color: lightblue; */
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+/*  */
+
+canvas {
+	display: block;
+	margin: 0 auto;
+}
+
+.WeatherTemperature {
+	display: inline-flex;
+	flex-direction: row;
+	align-content: flex-start;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: nowrap;
+}
+
+.WeatherTemperature .value {
+	color: var(--light-color);
+	font-size: 110px;
+	line-height: 1;
+	letter-spacing: 0.03em;
+}
+
+.weather-description {
+	color: var(--light-color);
+	text-transform: lowercase;
+	font-size: 14px;
+	line-height: 1;
+}
+
+.weather-description::first-letter {
+	color: var(--light-color);
+	text-transform: capitalize;
+	font-size: 13px;
+	line-height: 1;
+}
+
+/* celsius */
+
+.WeatherTemperature .unit-c {
+	font-family: var(--first-font-family);
+	color: var(--light-color);
+	font-size: 22px;
+	line-height: 1;
+	text-decoration: none;
+}
+
+.WeatherTemperature .unit-f a {
+	font-family: var(--first-font-family);
+	color: var(--text-color);
+	font-size: 22px;
+	line-height: 1;
+	text-decoration: none;
+}
+
+.WeatherTemperature .unit-c a {
+	font-family: var(--first-font-family);
+	color: var(--light-color);
+	font-size: 22px;
+	line-height: 1;
+	text-decoration: none;
+}
+
+.WeatherTemperature .unit-f {
+	font-family: var(--first-font-family);
+	color: var(--text-color);
+	font-size: 22px;
+	line-height: 1;
+	text-decoration: none;
+}
+
+/* wind & rain */
+
+.data-value {
+	color: var(--light-color);
+	text-align: left;
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 1;
+	letter-spacing: 0.02em;
+}
+
+.data-description {
+	color: var(--light-color);
+	font-size: 12px;
+	font-weight: 300;
+	letter-spacing: 0.02em;
+}
+
+/* forecast text */
+
+.forecast-text {
+	color: var(--light-color);
+	text-align: left;
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: 1.1px;
+	margin-bottom: 20px;
+}
+
+/* forecast row */
+
+.forecast .row {
+	/* margin: 0; */
+	padding: 0 auto;
+}
+
+.forecast .col {
+	margin: 0;
+	padding: 0 auto;
+}
+
+.forecast .card {
+	background: linear-gradient(
+		180deg,
+		var(--gradient-start) 0%,
+		var(--gradient-end) 100%
+	);
+	width: 80px;
+	height: 160px;
+	border-style: none;
+	color: var(--light-color);
+	border-radius: 70px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin: 0;
+}
+
+.forecast .card-body {
+	margin: 0;
+	padding: 0;
+}
+
+.forecast .day {
+	text-align: center;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1;
+	opacity: 0.9;
+	margin-bottom: 15px;
+}
+
+.forecast .temperature {
+	text-align: center;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 1;
+	opacity: 0.9;
+	letter-spacing: 0.4px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.forecast .icon {
+	display: block;
+	margin: 0 auto;
+	width: 40px;
+}
+
+/* footer */
+
+footer {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	color: var(--footer-color);
+	font-size: 8px;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+.web-link {
+	color: var(--footer-color);
+	text-decoration: none;
+}
+
+.web-link:hover {
+	color: var(--light-color);
+}
+
+.logo {
+	display: block;
+	margin: auto;
+	margin-top: -10px;
+	margin-bottom: -20px;
+	height: 120px;
+}
+
+@media (max-width: 420px) {
+	.current-icon {
+		height: 100px;
+	}
+}
