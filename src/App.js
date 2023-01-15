@@ -1,4 +1,5 @@
 import React from "react";
+import Weather from "./Weather.js";
 import "./App.css";
 // font awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,23 +10,10 @@ export default function App() {
 	return (
 		<div className="App">
 			<div className="container">
-				{/* icons */}
 				<div className="weather-container">
+					<Weather defaultCity="Innsbruck" />
 					{/* search bar */}
-					<form>
-						<input
-							type="search"
-							placeholder="Search city"
-							autoComplete="off"
-						/>
-						<button type="submit" className="search-button">
-							<FontAwesomeIcon
-								icon={faMagnifyingGlass}
-								color="white"
-								opacity={0.8}
-							/>
-						</button>
-					</form>
+					
 					<div className="city-name">Innsbruck</div>
 					<span className="country-name">AT</span>
 					<div className="date">Sunday 8 Jan&nbsp; 18:39</div>
@@ -52,16 +40,16 @@ export default function App() {
 								Broken clouds
 							</div>
 						</div>
-						<div className="col-auto ms-4 p-0">
+						<div className="col-auto ms-4 p-0 d-none d-md-block">
 							<div className="data-value">9mph</div>
 							<div className="data-description">Rain</div>
 						</div>
-						<div className="col-auto ms-3 p-0">
+						<div className="col-auto ms-3 p-0 d-none d-md-block">
 							<div className="data-value">25%</div>
 							<div className="data-description mb-1">Wind</div>
 						</div>
 					</div>
-					{/* weather forecast */}
+					{/* forecast */}
 					<div className="forecast-text mt-3 mb-2">Next 7 Days</div>
 					<div className="forecast">
 						<div className="row">
@@ -152,6 +140,7 @@ export default function App() {
 						</div>
 					</div>
 				</div>
+				{/* footer */}
 				<footer>
 					<img
 						src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/024/977/original/Avatar_Idol-logos_transparent.png?1642341793"

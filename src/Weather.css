@@ -1,0 +1,42 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&family=Jost:wght@400;500;600;700&display=swap");
+
+:root {
+	/* fonts */
+	--first-font-family: "DM Sans", sans-serif;
+	--second-font-family: "Jost", sans-serif;
+
+	/* colors */
+	--light-color: rgba(245, 245, 245, 0.9);
+	--text-color: rgba(97, 97, 97, 0.9);
+	--dark-color: rgba(66, 66, 66);
+	--footer-color: rgba(0, 0, 0, 0.9);
+	--background-color: rgba(40, 40, 40);
+	--container-color: rgba(31, 31, 31);
+	--gradient-start: rgb(245, 98, 224);
+	--gradient-end: rgb(45, 108, 255);
+}
+
+.Weather form input {
+	background-color: var(--background-color);
+	font-weight: 400;
+	font-size: 15px;
+	border-radius: 30px;
+	padding-left: 15px;
+	border-style: none;
+	width: 260px;
+	height: 35px;
+}
+
+.Weather form button {
+	background: linear-gradient(
+		90deg,
+		var(--gradient-start) 0%,
+		var(--gradient-end) 100%
+	);
+	border-style: none;
+	border-radius: 30px;
+	margin-left: -45px;
+	width: 35px;
+	height: 25px;
+}
