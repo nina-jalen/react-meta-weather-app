@@ -1,10 +1,6 @@
 import React from "react";
 import Weather from "./Weather.js";
 import "./App.css";
-// font awesome
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// font awesome icons
-import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 export default function App() {
 	return (
@@ -13,7 +9,7 @@ export default function App() {
 				<div className="weather-container">
 					<Weather defaultCity="Innsbruck" />
 					{/* search bar */}
-					
+
 					<div className="city-name">Innsbruck</div>
 					<span className="country-name">AT</span>
 					<div className="date">Sunday 8 Jan&nbsp; 18:39</div>
