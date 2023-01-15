@@ -9,7 +9,6 @@ export default function App() {
 				<div className="weather-container">
 					<Weather defaultCity="Innsbruck" />
 					{/* search bar */}
-
 					<div className="city-name">Innsbruck</div>
 					<span className="country-name">AT</span>
 					<div className="date">Sunday 8 Jan&nbsp; 18:39</div>
@@ -38,11 +37,11 @@ export default function App() {
 						</div>
 						<div className="col-auto ms-4 p-0 d-none d-md-block">
 							<div className="data-value">9mph</div>
-							<div className="data-description">Rain</div>
+							<div className="data-description">Wind</div>
 						</div>
 						<div className="col-auto ms-3 p-0 d-none d-md-block">
-							<div className="data-value">25%</div>
-							<div className="data-description mb-1">Wind</div>
+							<div className="data-value">87%</div>
+							<div className="data-description mb-1">Humidity</div>
 						</div>
 					</div>
 					{/* forecast */}

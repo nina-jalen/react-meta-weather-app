@@ -17,18 +17,19 @@
 	--gradient-end: rgb(45, 108, 255);
 }
 
-.Weather form input {
+.Weather input {
 	background-color: var(--background-color);
+	color: var(--light-color);
 	font-weight: 400;
 	font-size: 15px;
 	border-radius: 30px;
 	padding-left: 15px;
 	border-style: none;
-	width: 260px;
+	width: 250px;
 	height: 35px;
 }
 
-.Weather form button {
+.Weather button {
 	background: linear-gradient(
 		90deg,
 		var(--gradient-start) 0%,
@@ -36,7 +37,7 @@
 	);
 	border-style: none;
 	border-radius: 30px;
-	margin-left: -45px;
+	margin-left: -40px;
 	width: 35px;
 	height: 25px;
 }

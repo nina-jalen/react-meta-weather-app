@@ -11,7 +11,6 @@ export default function Weather(props) {
 	const [city, setCity] = useState(props.defaultCity);
 
 	function handleResponse(response) {
-		console.log(response.data);
 		setWeatherData({
 			loaded: true,
 			date: new Date(response.data.dt * 1000),
@@ -44,21 +43,21 @@ export default function Weather(props) {
 	if (weatherData.loaded) {
 		return (
 			<div className="Weather">
-				<form onSubmit={handleSumbit} />
-				<input
-					type="search"
-					placeholder="Search city"
-					autoComplete="off"
-					autoFocus="on"
-					onChange={changeCity}
-				/>
-				<button type="submit" className="search-button">
-					<FontAwesomeIcon
-						icon={faMagnifyingGlass}
-						color="white"
-						opacity={0.8}
+				<form onSubmit={handleSumbit}>
+					<input
+						type="search"
+						placeholder="Search city"
+						autoComplete="off"
+						onChange={changeCity}
 					/>
-				</button>
+					<button type="submit" value="/" className="search-button">
+						<FontAwesomeIcon
+							icon={faMagnifyingGlass}
+							color="white"
+							opacity={0.8}
+						/>
+					</button>
+				</form>
 			</div>
 		);
 	} else {
