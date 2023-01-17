@@ -1,0 +1,56 @@
+.forecast .row {
+	/* margin: 0; */
+	padding: 0 auto;
+}
+
+.forecast .col {
+	margin: 0;
+	padding: 0 auto;
+}
+
+.WeatherForecast .card {
+	background: linear-gradient(
+		180deg,
+		var(--gradient-start) 0%,
+		var(--gradient-end) 100%
+	);
+	width: 80px;
+	height: 160px;
+	border-style: none;
+	color: var(--light-color);
+	border-radius: 70px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin: 0;
+}
+
+.WeatherForecast .card-body {
+	margin: 0;
+	padding: 0;
+}
+
+.WeatherForecast .day {
+	text-align: center;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1;
+	opacity: 0.9;
+	margin-bottom: 15px;
+}
+
+.WeatherForecast .temperature {
+	text-align: center;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 1;
+	opacity: 0.9;
+	letter-spacing: 0.4px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.WeatherForecast .icon {
+	display: block;
+	margin: 0 auto;
+	width: 40px;
+}

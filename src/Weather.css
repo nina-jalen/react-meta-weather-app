@@ -41,3 +41,14 @@
 	width: 35px;
 	height: 25px;
 }
+
+/* forecast text */
+
+.forecast-text {
+	color: var(--light-color);
+	text-align: left;
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: 1.1px;
+	margin-bottom: 20px;
+}

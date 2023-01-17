@@ -65,7 +65,7 @@ canvas {
 	margin: 0 auto;
 }
 
-.WeatherTemperature {
+.WeatherTemperature {	
 	display: inline-flex;
 	flex-direction: row;
 	align-content: flex-start;
