@@ -25,9 +25,9 @@
 	font-size: 45px;
 	font-weight: 500;
 	letter-spacing: 0.15em;
-	line-height: 1.1;
-	margin-top: 20px;
+	margin-top: 15px;
 	margin-right: 5px;
+	margin-bottom: 0;
 }
 
 .country-name {
@@ -44,7 +44,7 @@
 	font-size: 14px;
 	font-weight: 400;
 	margin-bottom: 20px;
-	line-height: 1.4;
+	line-height: 1;
 }
 
 /* parent row */
