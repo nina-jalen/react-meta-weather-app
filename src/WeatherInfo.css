@@ -17,7 +17,7 @@
 	--gradient-end: rgb(45, 108, 255);
 }
 
-.city-name {
+.WeatherInfo .city-name {
 	font-family: var(--second-font-family);
 	color: var(--light-color);
 	display: inline-block;
@@ -30,7 +30,7 @@
 	margin-bottom: 0;
 }
 
-.country-name {
+.WeatherInfo .country-name {
 	font-family: var(--second-font-family);
 	color: var(--dark-color);
 	font-size: 30px;
@@ -47,23 +47,25 @@
 	line-height: 1;
 }
 
-/* parent row */
-
-.row-parent {
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-content: center;
-	justify-content: space-between;
-	align-items: flex-start;
-}
-
-/*  */
-
 .WeatherIcon img {
 	display: block;
 	margin: 0 auto;
 	padding: 0;
 }
+
+.WeatherInfo .weather-description {
+	color: var(--light-color);
+	text-transform: lowercase;
+	font-size: 15px;
+	line-height: 1;
+	letter-spacing: 0.02em;
+}
+
+.WeatherInfo .weather-description::first-letter {
+	text-transform: capitalize;
+}
+
+/* temperature */
 
 .WeatherTemperature {
 	display: inline-flex;
@@ -81,21 +83,6 @@
 	line-height: 1;
 	letter-spacing: 0.03em;
 }
-
-.weather-description {
-	color: var(--light-color);
-	text-transform: lowercase;
-	font-size: 14px;
-	line-height: 1;
-}
-
-.weather-description::first-letter {
-	color: var(--light-color);
-	text-transform: capitalize;
-	font-size: 13px;
-	line-height: 1;
-}
-
 /* celsius */
 
 .WeatherTemperature .unit-c {
@@ -132,7 +119,7 @@
 
 /* wind & rain */
 
-.data-value {
+.WeatherInfo .data-value {
 	color: var(--light-color);
 	text-align: left;
 	font-size: 22px;
@@ -141,9 +128,9 @@
 	letter-spacing: 0.02em;
 }
 
-.data-description {
+.WeatherInfo .data-description {
 	color: var(--light-color);
 	font-size: 12px;
 	font-weight: 300;
-	letter-spacing: 0.02em;
+	letter-spacing: 0.03em;
 }

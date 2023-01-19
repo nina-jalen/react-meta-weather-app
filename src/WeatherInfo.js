@@ -26,9 +26,6 @@ export default function WeatherInfo(props) {
 					{/* current temperature & unit conversion */}
 					<WeatherTemperature celsius={props.data.temperature} />
 					{/* weather data */}
-					<div className="weather-description">
-						{props.data.description}
-					</div>
 				</div>
 				<div className="col-auto ms-4 p-0 d-none d-md-block">
 					<div className="data-value">
@@ -41,6 +38,7 @@ export default function WeatherInfo(props) {
 					<div className="data-description mb-1">Humidity</div>
 				</div>
 			</div>
+			<div className="weather-description">{props.data.description}</div>
 		</div>
 	);
 }
