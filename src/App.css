@@ -28,36 +28,32 @@ body {
 	padding: 0 20px;
 }
 
-.weather-container {
+.App .weather-container {
 	background-color: var(--container-color);
 	border-radius: 25px;
 	padding: 20px 30px;
 	margin-bottom: 5px;
 }
 
-
 /* footer */
 
-footer {
-	display: block;
-	margin: 0 auto;
-	text-align: center;
+.App footer {
 	color: var(--footer-color);
+	text-align: center;
 	font-size: 8px;
 	font-weight: 300;
-	letter-spacing: 1px;
 }
 
-.web-link {
+.App .web-link {
 	color: var(--footer-color);
 	text-decoration: none;
 }
 
-.web-link:hover {
+.App .web-link:hover {
 	color: var(--light-color);
 }
 
-.logo {
+.App .logo {
 	display: block;
 	margin: auto;
 	margin-top: -10px;
@@ -65,8 +61,15 @@ footer {
 	height: 120px;
 }
 
+/* responsive */
+
 @media (max-width: 420px) {
-	.current-icon {
+	.App .current-icon {
 		height: 100px;
+	}
+
+	.App .logo {
+		margin-top: -20px;
+		height: 80px;
 	}
 }

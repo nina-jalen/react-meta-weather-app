@@ -50,7 +50,6 @@
 /* parent row */
 
 .row-parent {
-	/* background-color: lightblue; */
 	flex-direction: row;
 	flex-wrap: wrap;
 	align-content: center;
@@ -75,8 +74,9 @@
 }
 
 .WeatherTemperature .value {
+	font-family: var(--second-font-family);
 	color: var(--light-color);
-	font-size: 110px;
+	font-size: 80px;
 	line-height: 1;
 	letter-spacing: 0.03em;
 }
@@ -145,39 +145,4 @@
 	font-size: 12px;
 	font-weight: 300;
 	letter-spacing: 0.02em;
-}
-
-/* footer */
-
-footer {
-	display: block;
-	margin: 0 auto;
-	text-align: center;
-	color: var(--footer-color);
-	font-size: 8px;
-	font-weight: 300;
-	letter-spacing: 1px;
-}
-
-.web-link {
-	color: var(--footer-color);
-	text-decoration: none;
-}
-
-.web-link:hover {
-	color: var(--light-color);
-}
-
-.logo {
-	display: block;
-	margin: auto;
-	margin-top: -10px;
-	margin-bottom: -20px;
-	height: 120px;
-}
-
-@media (max-width: 420px) {
-	.current-icon {
-		height: 100px;
-	}
 }

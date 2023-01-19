@@ -29,6 +29,10 @@
 	height: 35px;
 }
 
+.Weather ::placeholder {
+	color: rgba(245, 245, 245, 0.3);
+}
+
 .Weather button {
 	background: linear-gradient(
 		90deg,
@@ -42,9 +46,7 @@
 	height: 25px;
 }
 
-/* forecast text */
-
-.forecast-text {
+.Weather .forecast-text {
 	color: var(--light-color);
 	text-align: left;
 	font-size: 18px;

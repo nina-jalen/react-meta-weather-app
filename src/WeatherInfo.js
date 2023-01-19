@@ -28,7 +28,7 @@ export default function WeatherInfo(props) {
 				</div>
 				<div className="col-auto ms-4 p-0 d-none d-md-block">
 					<div className="data-value">
-						{Math.round(props.data.wind)}km/h
+						{Math.round(props.data.wind * 0.001 * 3600)}&nbsp;km/h
 					</div>
 					<div className="data-description">Wind</div>
 				</div>
