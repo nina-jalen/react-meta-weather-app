@@ -16,7 +16,11 @@ export default function WeatherInfo(props) {
 			<div className="row justify-content-start m-0 p-0 row-parent">
 				{/* icon */}
 				<div className="col-auto m-0 p-0">
-					<WeatherIcon code={props.data.icon} size={70} />
+					<WeatherIcon
+						code={props.data.icon}
+						description={props.data.description}
+						size={70}
+					/>
 				</div>
 				<div className="col-auto ms-3 p-0">
 					{/* current temperature & unit conversion */}

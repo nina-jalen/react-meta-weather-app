@@ -59,9 +59,10 @@
 
 /*  */
 
-.WeatherIcon canvas {
+.WeatherIcon img {
 	display: block;
 	margin: 0 auto;
+	padding: 0;
 }
 
 .WeatherTemperature {
