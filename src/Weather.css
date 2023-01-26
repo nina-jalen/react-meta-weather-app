@@ -1,11 +1,4 @@
-/* google fonts */
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&family=Jost:wght@400;500;600;700&display=swap");
-
 :root {
-	/* fonts */
-	--first-font-family: "DM Sans", sans-serif;
-	--second-font-family: "Jost", sans-serif;
-
 	/* colors */
 	--light-color: rgba(245, 245, 245, 0.9);
 	--text-color: rgba(97, 97, 97, 0.9);
