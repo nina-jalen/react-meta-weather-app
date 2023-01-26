@@ -13,12 +13,12 @@ export default function WeatherInfo(props) {
 	return (
 		<div className="WeatherInfo">
 			{/* city */}
-			<h1 className="city-name">{props.data.city}</h1>
-			<span className="country-name">{props.data.country}</span>
+			<h1 className="cityName">{props.data.city}</h1>
+			<span className="countryName">{props.data.country}</span>
 			{/* date */}
 			<FormattedDate date={props.data.date} />
-			{/* weather descripiton */}
-			<div className="weather-description">{props.data.description}</div>
+			{/* descripiton */}
+			<div className="weatherDescription">{props.data.description}</div>
 			{/* current weather */}
 			<div className="row justify-content-start m-0 p-0 row-parent">
 				{/* icon */}
@@ -26,7 +26,7 @@ export default function WeatherInfo(props) {
 					<WeatherIcon
 						code={props.data.icon}
 						description={props.data.description}
-						size={70}
+						size={90}
 					/>
 				</div>
 				{/* current temperature & unit conversion */}
@@ -34,7 +34,7 @@ export default function WeatherInfo(props) {
 					<WeatherTemperature celsius={props.data.temperature} />
 				</div>
 				{/* weather data */}
-				<div className="col-auto ms-4 p-0 d-none d-md-block">
+				<div className="col-auto ms-3 p-0 d-none d-md-block">
 					<div>
 						<FontAwesomeIcon
 							icon={faWind}
@@ -43,10 +43,10 @@ export default function WeatherInfo(props) {
 							className="dataIcon"
 						/>
 					</div>
-					<div className="data-value">
+					<div className="dataValue">
 						{Math.round(props.data.wind * 0.001 * 3600)}km/h
 					</div>
-					<div className="data-description">Wind</div>
+					<div className="dataDescription">Wind</div>
 				</div>
 				<div className="col-auto ms-3 p-0 d-none d-md-block">
 					<div>
@@ -57,8 +57,8 @@ export default function WeatherInfo(props) {
 							className="dataIcon"
 						/>
 					</div>
-					<div className="data-value">{props.data.humidity}%</div>
-					<div className="data-description">Humidity</div>
+					<div className="dataValue">{props.data.humidity}%</div>
+					<div className="dataDescription">Humidity</div>
 				</div>
 			</div>
 		</div>

@@ -54,7 +54,7 @@ export default function Weather(props) {
 						autoFocus="on"
 						onChange={changeCity}
 					/>
-					<button type="submit" value="/" className="search-button">
+					<button type="submit" value="/">
 						<FontAwesomeIcon
 							icon={faMagnifyingGlass}
 							color="white"
@@ -63,7 +63,7 @@ export default function Weather(props) {
 					</button>
 				</form>
 				<WeatherInfo data={weatherData} />
-				<div className="forecast-text mt-3 mb-2">Next 6 Days</div>
+				<div className="forecastText mt-1 mb-3">Next 6 Days</div>
 				<WeatherForecast coordinates={weatherData.coordinates} />
 			</div>
 		);

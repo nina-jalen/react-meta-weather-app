@@ -6,7 +6,7 @@ export default function App() {
 	return (
 		<div className="App">
 			<div className="container">
-				<div className="weather-container">
+				<div className="weatherContainer">
 					<Weather defaultCity="Innsbruck" />
 				</div>
 				<footer>
@@ -19,16 +19,16 @@ export default function App() {
 						href="https://github.com/nina-jalen/react-meta-weather-app"
 						target="_blank"
 						rel="noreferrer"
-						className="web-link"
+						className="webLink"
 					>
-						Open-source code
+						Open source code
 					</a>{" "}
 					by{" "}
 					<a
 						href="https://nina-jalen.github.io/"
 						target="_blank"
 						rel="noreferrer"
-						className="web-link"
+						className="webLink"
 					>
 						Nina Jalen
 					</a>

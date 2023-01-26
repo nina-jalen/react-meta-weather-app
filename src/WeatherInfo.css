@@ -10,48 +10,45 @@
 	--gradient-end: rgb(45, 108, 255);
 }
 
-.WeatherInfo .city-name {
+.WeatherInfo .cityName {
 	color: var(--light-color);
 	display: inline-block;
 	text-transform: capitalize;
-	font-size: 45px;
-	font-weight: 500;
+	font-size: 50px;
 	letter-spacing: 0.15em;
 	margin-top: 15px;
 	margin-right: 5px;
-	margin-bottom: 5px;
+	margin-bottom: 2px;
 }
 
-.WeatherInfo .country-name {
+.WeatherInfo .countryName {
 	color: var(--dark-color);
 	font-size: 30px;
-	font-weight: 500;
 	letter-spacing: 0.1em;
-	line-height: 1.1;
 }
 
 .FormattedDate {
 	color: var(--text-color);
-	font-size: 14px;
+	font-size: 15px;
 	line-height: 1;
-	margin-bottom: 5px;
+	margin-bottom: 7px;
+}
+
+.WeatherInfo .weatherDescription {
+	color: var(--light-color);
+	text-transform: lowercase;
+	font-size: 16px;
+	line-height: 2;
+}
+
+.WeatherInfo .weatherDescription::first-letter {
+	text-transform: capitalize;
 }
 
 .WeatherIcon img {
 	display: block;
 	margin: 0 auto;
 	padding: 0;
-}
-
-.WeatherInfo .weather-description {
-	color: var(--light-color);
-	text-transform: lowercase;
-	font-size: 14px;
-	line-height: 2;
-}
-
-.WeatherInfo .weather-description::first-letter {
-	text-transform: capitalize;
 }
 
 /* temperature */
@@ -65,68 +62,58 @@
 	flex-wrap: nowrap;
 }
 
-.WeatherTemperature .value {
+.WeatherTemperature-value {
 	color: var(--light-color);
-	font-size: 80px;
-	line-height: 1;
+	font-size: 90px;
+	line-height: 1.2;
 	letter-spacing: 0.03em;
-	padding: 0;
 }
 /* celsius */
 
-.WeatherTemperature .unit-c {
+.WeatherTemperature-unit {
 	color: var(--light-color);
-	font-size: 22px;
-	line-height: 1;
+	font-size: 25px;
+	line-height: 1.9;
 	text-decoration: none;
 }
 
-.WeatherTemperature .unit-f a {
+.WeatherTemperature a {
 	color: var(--text-color);
-	font-size: 22px;
-	line-height: 1;
+	font-size: 25px;
+	line-height: 1.9;
 	text-decoration: none;
 }
 
-.WeatherTemperature .unit-c a {
+/* .WeatherTemperature a:hover {
 	color: var(--light-color);
-	font-size: 22px;
-	line-height: 1;
+	font-size: 25px;
+	line-height: 1.9;
 	text-decoration: none;
-}
-
-.WeatherTemperature .unit-f {
-	color: var(--text-color);
-	font-size: 22px;
-	line-height: 1;
-	text-decoration: none;
-}
+} */
 
 /* wind & rain */
 
 .WeatherInfo .dataIcon {
 	display: block;
 	margin: 0 auto;
-	font-size: 16px;
+	font-size: 18px;
 	margin-bottom: 12px;
+	margin-top: 13px;
 }
 
-.WeatherInfo .data-value {
+.WeatherInfo .dataValue {
 	color: var(--light-color);
 	text-align: center;
-	font-size: 15px;
-	/* font-weight: 400; */
+	font-size: 16px;
 	line-height: 1;
-	/* letter-spacing: 0.02em; */
+	letter-spacing: 0.02em;
 	margin-bottom: 12px;
 }
 
-.WeatherInfo .data-description {
+.WeatherInfo .dataDescription {
 	color: var(--text-color);
 	text-align: center;
-	font-size: 12px;
-	font-weight: 300;
-	/* letter-spacing: 0.02em; */
-	margin-bottom: 5px;
+	font-size: 14px;
+	letter-spacing: 0.02em;
 	line-height: 1;
 }
