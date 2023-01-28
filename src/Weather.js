@@ -7,6 +7,8 @@ import "./Weather.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // font awesome icons
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+// loader
+import { MutatingDots } from "react-loader-spinner";
 
 export default function Weather(props) {
 	const [weatherData, setWeatherData] = useState({ loaded: false });
@@ -46,29 +48,44 @@ export default function Weather(props) {
 	if (weatherData.loaded) {
 		return (
 			<div className="Weather">
-				<form onSubmit={handleSumbit}>
-					<input
-						type="search"
-						placeholder="Search city"
-						autoComplete="off"
-						autoFocus="on"
-						onChange={changeCity}
-					/>
-					<button type="submit" value="/">
-						<FontAwesomeIcon
-							icon={faMagnifyingGlass}
-							color="white"
-							opacity={0.8}
+				<div className="weatherContainer">
+					<form onSubmit={handleSumbit}>
+						<input
+							type="search"
+							placeholder="Search city"
+							autoComplete="off"
+							autoFocus="on"
+							onChange={changeCity}
 						/>
-					</button>
-				</form>
-				<WeatherInfo data={weatherData} />
-				<div className="forecastText mt-1 mb-3">Next 6 Days</div>
-				<WeatherForecast coordinates={weatherData.coordinates} />
+						<button type="submit" value="/">
+							<FontAwesomeIcon
+								icon={faMagnifyingGlass}
+								color="white"
+								opacity={0.8}
+							/>
+						</button>
+					</form>
+					<WeatherInfo data={weatherData} />
+					<div className="forecastText mt-1 mb-3">Next 6 Days</div>
+					<WeatherForecast coordinates={weatherData.coordinates} />
+				</div>
 			</div>
 		);
 	} else {
 		search();
-		return "The app is loading ...";
+		return (
+			<div className="Weather">
+				<MutatingDots
+					height="80"
+					width="80"
+					color="#F712A0"
+					secondaryColor="#F712A0"
+					radius="12.5"
+					ariaLabel="mutating-dots-loading"
+					visible={true}
+					wrapperClass="d-flex justify-content-center o-10 mt-4 mb-5 loaderDots"
+				/>
+			</div>
+		);
 	}
 }

@@ -24,13 +24,6 @@ body {
 	padding: 0 20px;
 }
 
-.App .weatherContainer {
-	background-color: var(--container-color);
-	border-radius: 25px;
-	padding: 20px 30px;
-	margin-bottom: 5px;
-}
-
 /* footer */
 
 .App footer {

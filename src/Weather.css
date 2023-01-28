@@ -10,6 +10,13 @@
 	--gradient-end: rgb(45, 108, 255);
 }
 
+.Weather .weatherContainer {
+	background-color: var(--container-color);
+	border-radius: 25px;
+	padding: 20px 30px;
+	margin-bottom: 5px;
+}
+
 .Weather input {
 	background-color: var(--background-color);
 	color: var(--light-color);
@@ -43,4 +50,8 @@
 	text-align: left;
 	font-size: 20px;
 	letter-spacing: 1.1px;
+}
+
+.Weather .loaderDots {
+	opacity: 0.8;
 }

@@ -34,7 +34,7 @@ export default function WeatherInfo(props) {
 					<WeatherTemperature celsius={props.data.temperature} />
 				</div>
 				{/* weather data */}
-				<div className="col-auto ms-3 p-0 d-none d-md-block">
+				<div className="col-auto ms-4 p-0 d-none d-md-block">
 					<div>
 						<FontAwesomeIcon
 							icon={faWind}

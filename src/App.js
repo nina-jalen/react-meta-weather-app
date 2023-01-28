@@ -6,9 +6,7 @@ export default function App() {
 	return (
 		<div className="App">
 			<div className="container">
-				<div className="weatherContainer">
-					<Weather defaultCity="Innsbruck" />
-				</div>
+				<Weather defaultCity="Innsbruck" />
 				<footer>
 					<img
 						src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/024/977/original/Avatar_Idol-logos_transparent.png?1642341793"
