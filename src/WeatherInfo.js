@@ -2,10 +2,6 @@ import React from "react";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
 import WeatherTemperature from "./WeatherTemperature";
-// font awesome
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// font awesome icons
-import { faDroplet, faWind } from "@fortawesome/free-solid-svg-icons";
 
 import "./WeatherInfo.css";
 
@@ -36,11 +32,11 @@ export default function WeatherInfo(props) {
 				{/* weather data */}
 				<div className="col-auto ms-4 p-0 d-none d-md-block">
 					<div>
-						<FontAwesomeIcon
-							icon={faWind}
-							color="white"
-							opacity={0.8}
+						<img
+							src={require(`./Icons/wind.png`)}
+							alt="Wind logo"
 							className="dataIcon"
+							style={{ height: "24px" }}
 						/>
 					</div>
 					<div className="dataValue">
@@ -50,11 +46,11 @@ export default function WeatherInfo(props) {
 				</div>
 				<div className="col-auto ms-3 p-0 d-none d-md-block">
 					<div>
-						<FontAwesomeIcon
-							icon={faDroplet}
-							color="white"
-							opacity={0.8}
+						<img
+							src={require(`./Icons/humidity.png`)}
+							alt="Humidity logo"
 							className="dataIcon"
+							style={{ height: "23px" }}
 						/>
 					</div>
 					<div className="dataValue">{props.data.humidity}%</div>

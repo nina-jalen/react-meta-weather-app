@@ -84,19 +84,11 @@
 	text-decoration: none;
 }
 
-/* .WeatherTemperature a:hover {
-	color: var(--light-color);
-	font-size: 25px;
-	line-height: 1.9;
-	text-decoration: none;
-} */
-
-/* wind & rain */
+/* wind & humidity */
 
 .WeatherInfo .dataIcon {
 	display: block;
 	margin: 0 auto;
-	font-size: 18px;
 	margin-bottom: 12px;
 	margin-top: 13px;
 }
