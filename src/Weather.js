@@ -69,6 +69,30 @@ export default function Weather(props) {
 					<div className="forecastText mt-1 mb-3">Next 6 Days</div>
 					<WeatherForecast coordinates={weatherData.coordinates} />
 				</div>
+				<footer>
+					<img
+						src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/024/977/original/Avatar_Idol-logos_transparent.png?1642341793"
+						alt="Logo"
+						className="logo"
+					/>
+					<a
+						href="https://github.com/nina-jalen/react-meta-weather-app"
+						target="_blank"
+						rel="noreferrer"
+						className="webLink"
+					>
+						Open source code
+					</a>{" "}
+					by{" "}
+					<a
+						href="https://nina-jalen.github.io/"
+						target="_blank"
+						rel="noreferrer"
+						className="webLink"
+					>
+						Nina Jalen
+					</a>
+				</footer>
 			</div>
 		);
 	} else {
@@ -83,7 +107,7 @@ export default function Weather(props) {
 					radius="12.5"
 					ariaLabel="mutating-dots-loading"
 					visible={true}
-					wrapperClass="d-flex justify-content-center o-10 mt-4 mb-5 loaderDots"
+					wrapperClass="justify-content-center loaderDots"
 				/>
 			</div>
 		);

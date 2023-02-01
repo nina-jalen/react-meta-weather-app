@@ -53,5 +53,41 @@
 }
 
 .Weather .loaderDots {
-	opacity: 0.8;
+	opacity: 0.7;
+	margin-top: 150px;
+}
+
+/* footer */
+
+.Weather footer {
+	color: var(--footer-color);
+	text-align: center;
+	font-size: 8px;
+	letter-spacing: 0.05em;
+}
+
+.Weather .webLink {
+	color: var(--footer-color);
+	text-decoration: none;
+}
+
+.Weather .webLink:hover {
+	color: var(--light-color);
+}
+
+.Weather .logo {
+	display: block;
+	margin: auto;
+	margin-top: -10px;
+	margin-bottom: -20px;
+	height: 120px;
+}
+
+/* responsive */
+
+@media (max-width: 420px) {
+	.Weather .logo {
+		margin-top: -20px;
+		height: 80px;
+	}
 }

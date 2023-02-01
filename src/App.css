@@ -24,37 +24,4 @@ body {
 	padding: 0 20px;
 }
 
-/* footer */
 
-.App footer {
-	color: var(--footer-color);
-	text-align: center;
-	font-size: 8px;
-	letter-spacing: 0.05em;
-}
-
-.App .webLink {
-	color: var(--footer-color);
-	text-decoration: none;
-}
-
-.App .webLink:hover {
-	color: var(--light-color);
-}
-
-.App .logo {
-	display: block;
-	margin: auto;
-	margin-top: -10px;
-	margin-bottom: -20px;
-	height: 120px;
-}
-
-/* responsive */
-
-@media (max-width: 420px) {
-	.App .logo {
-		margin-top: -20px;
-		height: 80px;
-	}
-}
