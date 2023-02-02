@@ -65,7 +65,7 @@
 .WeatherTemperature-value {
 	color: var(--light-color);
 	font-size: 90px;
-	line-height: 1.2;
+	line-height: 1.1;
 	letter-spacing: 0.03em;
 }
 /* celsius */
@@ -73,14 +73,14 @@
 .WeatherTemperature-unit {
 	color: var(--light-color);
 	font-size: 25px;
-	line-height: 1.9;
+	line-height: 1.7;
 	text-decoration: none;
 }
 
 .WeatherTemperature a {
 	color: var(--text-color);
 	font-size: 25px;
-	line-height: 1.9;
+	line-height: 1.7;
 	text-decoration: none;
 }
 
@@ -89,8 +89,8 @@
 .WeatherInfo .dataIcon {
 	display: block;
 	margin: 0 auto;
-	margin-bottom: 12px;
-	margin-top: 13px;
+	margin-bottom: 10px;
+	margin-top: 10px;
 }
 
 .WeatherInfo .dataValue {
@@ -99,7 +99,7 @@
 	font-size: 16px;
 	line-height: 1;
 	letter-spacing: 0.02em;
-	margin-bottom: 12px;
+	margin-bottom: 10px;
 }
 
 .WeatherInfo .dataDescription {
