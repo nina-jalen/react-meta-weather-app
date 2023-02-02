@@ -79,6 +79,7 @@ export default function Weather(props) {
 						href="https://github.com/nina-jalen/react-meta-weather-app"
 						target="_blank"
 						rel="noreferrer"
+						title="GitHub profile"
 						className="webLink"
 					>
 						Open source code
@@ -88,6 +89,7 @@ export default function Weather(props) {
 						href="https://nina-jalen.github.io/"
 						target="_blank"
 						rel="noreferrer"
+						title="Nina's webpage"
 						className="webLink"
 					>
 						Nina Jalen
