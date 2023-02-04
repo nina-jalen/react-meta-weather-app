@@ -1,6 +1,6 @@
 .WeatherInfo .cityName {
 	color: var(--light-color);
-	display: inline-block;
+	display: inline;
 	text-transform: capitalize;
 	font-size: 50px;
 	letter-spacing: 0.15em;
@@ -98,11 +98,12 @@
 	}
 
 	.WeatherInfo .cityName {
-		font-size: 40px;
+		font-size: 30px;
 	}
 
 	.WeatherInfo .countryName {
-		font-size: 24px;
+		font-size: 20px;
+		margin-top: 5px;
 	}
 
 	.FormattedDate {

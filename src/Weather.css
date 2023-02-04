@@ -13,6 +13,7 @@
 	border-style: none;
 	width: 250px;
 	height: 35px;
+	line-height: 1;
 }
 
 .Weather ::placeholder {
@@ -68,14 +69,18 @@
 }
 
 @media (max-width: 420px) {
+	.Weather .weatherContainer {
+		padding: 20px 20px;
+	}
+
+	.Weather .forecastText {
+		font-size: 16px;
+	}
+
 	.Weather .logo {
 		margin-top: -5px;
 		margin-bottom: -15px;
-		height: 80px;
-	}
-
-	.Weather .weatherContainer {
-		padding: 20px 20px;
+		height: 60px;
 	}
 
 	.Weather footer {
