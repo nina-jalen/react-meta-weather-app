@@ -41,11 +41,12 @@
 	}
 
 	.WeatherForecastDay-day {
-		font-size: 14px;
+		font-size: 15px;
 		margin-bottom: 10px !important;
 	}
 
-	.WeatherForecastDay-temperature {
+	.WeatherForecastDay-minTemperature,
+	.WeatherForecastDay-maxTemperature {
 		font-size: 14px;
 	}
 }
