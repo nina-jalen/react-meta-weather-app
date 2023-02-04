@@ -1,8 +1,7 @@
 .Weather .weatherContainer {
 	background-color: var(--container-color);
 	border-radius: 25px;
-	padding: 20px 30px;
-	margin-bottom: 5px;
+	padding: 25px 30px;
 }
 
 .Weather input {
@@ -35,9 +34,8 @@
 
 .Weather .forecastText {
 	color: var(--light-color);
-	text-align: left;
 	font-size: 20px;
-	letter-spacing: 1.1px;
+	letter-spacing: 0.05em;
 }
 
 .Weather .loaderDots {
@@ -45,12 +43,10 @@
 	margin-top: 150px;
 }
 
-/* footer */
-
 .Weather footer {
 	color: var(--footer-color);
 	text-align: center;
-	font-size: 8px;
+	font-size: 10px;
 	letter-spacing: 0.05em;
 }
 
@@ -71,11 +67,15 @@
 	height: 120px;
 }
 
-/* responsive */
-
 @media (max-width: 420px) {
 	.Weather .logo {
 		margin-top: -20px;
 		height: 80px;
+	}
+}
+
+@media (max-width: 719px) {
+	.Weather .weatherContainer {
+		padding-bottom: 10px;
 	}
 }
