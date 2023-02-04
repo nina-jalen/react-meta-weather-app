@@ -69,14 +69,17 @@
 
 @media (max-width: 420px) {
 	.Weather .logo {
-		margin-top: -20px;
-		height: 50px;
+		margin-top: -5px;
+		margin-bottom: -15px;
+		height: 80px;
 	}
-}
 
-@media (max-width: 436px) {
-	.Weather .forecastText {
-		font-size: 15px;
+	.Weather .weatherContainer {
+		padding: 20px 20px;
+	}
+
+	.Weather footer {
+		font-size: 5px;
 	}
 }
 
