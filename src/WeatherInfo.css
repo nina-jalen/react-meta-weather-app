@@ -75,7 +75,7 @@
 	text-align: center;
 	font-size: 16px;
 	line-height: 1;
-	letter-spacing: 0.02em;
+	letter-spacing: 0.05em;
 }
 
 .WeatherInfo .dataDescription {
@@ -83,11 +83,33 @@
 	text-align: center;
 	font-size: 14px;
 	line-height: 1;
-	letter-spacing: 0.02em;
+	letter-spacing: 0.03em;
 }
 
 @media (max-width: 420px) {
 	.WeatherInfo .row {
 		justify-content: center;
+	}
+}
+
+@media (max-width: 436px) {
+	.WeatherInfo .row {
+		justify-content: center;
+	}
+
+	.WeatherInfo .cityName {
+		font-size: 40px;
+	}
+
+	.WeatherInfo .countryName {
+		font-size: 24px;
+	}
+
+	.FormattedDate {
+		margin-bottom: 5px;
+	}
+
+	.WeatherInfo .weatherDescription {
+		font-size: 15px;
 	}
 }

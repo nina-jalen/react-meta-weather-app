@@ -70,7 +70,13 @@
 @media (max-width: 420px) {
 	.Weather .logo {
 		margin-top: -20px;
-		height: 80px;
+		height: 50px;
+	}
+}
+
+@media (max-width: 436px) {
+	.Weather .forecastText {
+		font-size: 15px;
 	}
 }
 
