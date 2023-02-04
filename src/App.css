@@ -24,3 +24,10 @@ body {
 	margin: 35px auto;
 	padding: 0 30px;
 }
+
+@media (max-width: 436px) {
+	.App {
+		margin: 25px auto;
+		padding: 0 25px;
+	}
+}

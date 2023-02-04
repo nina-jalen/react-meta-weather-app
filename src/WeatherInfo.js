@@ -29,7 +29,7 @@ export default function WeatherInfo(props) {
 					<WeatherTemperature celsius={props.data.temperature} />
 				</div>
 				{/* weather data */}
-				<div className="col-auto ms-4 p-0 d-none d-sm-block">
+				<div className="col-auto ms-4 p-0 weatherData">
 					<div>
 						<img
 							src={require(`./Icons/wind.png`)}
@@ -43,7 +43,7 @@ export default function WeatherInfo(props) {
 					</div>
 					<div className="dataDescription">Wind</div>
 				</div>
-				<div className="col-auto ms-3 p-0 d-none d-sm-block">
+				<div className="col-auto ms-3 p-0 weatherData">
 					<div>
 						<img
 							src={require(`./Icons/humidity.png`)}

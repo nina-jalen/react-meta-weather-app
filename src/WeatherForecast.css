@@ -20,15 +20,34 @@
 	color: var(--light-color);
 	text-align: center;
 	font-size: 16px;
-	line-height: 1;
+	margin-bottom: 15px;
 }
 
-.WeatherForecastDay-temperature {
+.WeatherForecastDay-minTemperature,
+.WeatherForecastDay-maxTemperature {
 	color: var(--light-color);
 	text-align: center;
 	font-size: 14px;
 	line-height: 1;
 	letter-spacing: 0.05em;
+}
+
+@media (max-width: 420px) {
+	.WeatherForecastDay-card {
+		width: 65px;
+		height: 145px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	.WeatherForecastDay-day {
+		font-size: 14px;
+		margin-bottom: 10px !important;
+	}
+
+	.WeatherForecastDay-temperature {
+		font-size: 14px;
+	}
 }
 
 @media (max-width: 719px) {

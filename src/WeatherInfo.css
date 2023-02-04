@@ -1,6 +1,6 @@
 .WeatherInfo .cityName {
 	color: var(--light-color);
-	display: inline;
+	display: inline-block;
 	text-transform: capitalize;
 	font-size: 50px;
 	letter-spacing: 0.15em;
@@ -107,10 +107,16 @@
 	}
 
 	.FormattedDate {
-		margin-bottom: 5px;
+		margin-bottom: 15px;
 	}
 
 	.WeatherInfo .weatherDescription {
-		font-size: 15px;
+		display: none;
+	}
+}
+
+@media (max-width: 478px) {
+	.WeatherInfo .weatherData {
+		display: none;
 	}
 }
