@@ -95,12 +95,6 @@
 	}
 }
 
-@media (max-width: 420px) {
-	.WeatherInfo .row {
-		justify-content: center;
-	}
-}
-
 @media (max-width: 436px) {
 	.WeatherInfo .row {
 		justify-content: center;
@@ -144,7 +138,7 @@
 	}
 }
 
-@media (max-width: 478px) {
+@media (max-width: 545px) {
 	.WeatherInfo .weatherData {
 		display: none;
 	}

@@ -1,7 +1,3 @@
-.WeatherForecast .col {
-	margin: 0;
-}
-
 .WeatherForecastDay-card {
 	background: linear-gradient(
 		180deg,
@@ -38,6 +34,10 @@
 }
 
 @media (max-width: 420px) {
+	.WeatherForecast .col {
+		margin-bottom: 10px !important;
+	}
+
 	.WeatherForecastDay-card {
 		width: 60px;
 		height: 140px;

@@ -12,18 +12,16 @@
 	background-color: var(--background-color);
 	color: var(--light-color);
 	font-size: 17px;
-	border-radius: 30px;
-	padding-left: 15px;
 	border-style: none;
+	border-radius: 30px;
 	width: 250px;
 	height: 35px;
 	line-height: 1;
+	padding-left: 15px;
 }
 
 .Weather ::placeholder {
 	color: rgba(245, 245, 245, 0.3);
-	line-height: 1;
-	padding: 0;
 }
 
 .Weather button {
@@ -36,6 +34,8 @@
 	border-radius: 30px;
 	width: 50px;
 	height: 35px;
+	margin: 0;
+	padding: 0;
 	margin-left: 10px;
 }
 
@@ -50,11 +50,6 @@
 	color: var(--light-color);
 	font-size: 18px;
 	letter-spacing: 0.05em;
-}
-
-.Weather .loaderDots {
-	opacity: 0.9;
-	margin-top: 150px;
 }
 
 .Weather footer {
@@ -78,25 +73,29 @@
 	margin: auto;
 	margin-top: -10px;
 	margin-bottom: -20px;
-	height: 120px;
+	height: 110px;
 }
 
-@media (max-width: 344px) {
+.Weather .loaderDots {
+	opacity: 0.9;
+	margin-top: 150px;
+}
+
+@media (max-width: 342px) {
+	.Weather form {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
 	.Weather button {
 		margin-top: 10px;
-		/* margin-left: 0 !important; */
+		margin-left: 0 !important;
 	}
 }
 
 @media (max-width: 420px) {
 	.Weather .weatherContainer {
-		padding: 20px 20px;
-	}
-
-	.Weather form {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
+		padding: 20px;
 	}
 
 	.Weather input {
