@@ -30,7 +30,7 @@
 	text-transform: capitalize;
 }
 
-.WeatherIcon img {
+.WeatherInfo .WeatherIcon img {
 	display: block;
 	margin: 0 auto;
 }
@@ -86,6 +86,15 @@
 	letter-spacing: 0.03em;
 }
 
+@media (max-width: 344px) {
+	.WeatherInfo .cityName {
+		margin-right: 0 !important;
+	}
+	.WeatherInfo .countryName {
+		display: none;
+	}
+}
+
 @media (max-width: 420px) {
 	.WeatherInfo .row {
 		justify-content: center;
@@ -97,17 +106,37 @@
 		justify-content: center;
 	}
 
+	.WeatherInfo {
+		text-align: center;
+	}
+
 	.WeatherInfo .cityName {
-		font-size: 30px;
+		font-size: 35px;
+		margin-top: 15px !important;
 	}
 
 	.WeatherInfo .countryName {
-		font-size: 20px;
-		margin-top: 5px;
+		font-size: 25px;
 	}
 
 	.FormattedDate {
-		margin-bottom: 15px;
+		margin-bottom: 13px;
+	}
+
+	.WeatherInfo .WeatherIcon img {
+		height: 70px;
+	}
+
+	.WeatherTemperature-value {
+		font-size: 70px;
+	}
+
+	.WeatherTemperature-unit {
+		font-size: 20px;
+	}
+
+	.WeatherTemperature a {
+		font-size: 20px;
 	}
 
 	.WeatherInfo .weatherDescription {

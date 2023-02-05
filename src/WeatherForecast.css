@@ -32,10 +32,15 @@
 	letter-spacing: 0.05em;
 }
 
+.WeatherForecastDay .WeatherIcon img {
+	display: block;
+	margin: 0 auto;
+}
+
 @media (max-width: 420px) {
 	.WeatherForecastDay-card {
-		width: 65px;
-		height: 145px;
+		width: 60px;
+		height: 140px;
 		padding-top: 15px;
 		padding-bottom: 15px;
 	}
@@ -48,6 +53,10 @@
 	.WeatherForecastDay-minTemperature,
 	.WeatherForecastDay-maxTemperature {
 		font-size: 14px;
+	}
+
+	.WeatherForecastDay .WeatherIcon img {
+		height: 35px;
 	}
 }
 
