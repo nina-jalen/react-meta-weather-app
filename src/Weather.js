@@ -61,7 +61,7 @@ export default function Weather(props) {
 							type="submit"
 							value=""
 							role="none"
-							aria-label=""
+							aria-label="true"
 						>
 							<FontAwesomeIcon
 								icon={faMagnifyingGlass}
