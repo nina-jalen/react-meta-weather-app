@@ -56,11 +56,13 @@ export default function Weather(props) {
 							autoComplete="off"
 							autoFocus="on"
 							onChange={changeCity}
+							aria-label="Search"
 						/>
 						<button
 							type="submit"
 							value=""
 							role="none"
+							title="Search"
 							aria-label="Search"
 						>
 							<FontAwesomeIcon
