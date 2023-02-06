@@ -33,6 +33,7 @@
 .WeatherInfo .WeatherIcon img {
 	display: block;
 	margin: 0 auto;
+	height: 100%;
 }
 
 /* temperature */

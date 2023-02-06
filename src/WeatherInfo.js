@@ -35,7 +35,7 @@ export default function WeatherInfo(props) {
 							src={require(`./Icons/wind.png`)}
 							alt="Wind logo"
 							className="dataIcon my-2"
-							style={{ height: "24px" }}
+							style={{ height: "24px", width: "auto" }}
 						/>
 					</div>
 					<div className="dataValue mb-2">
@@ -49,7 +49,7 @@ export default function WeatherInfo(props) {
 							src={require(`./Icons/humidity.png`)}
 							alt="Humidity logo"
 							className="dataIcon my-2"
-							style={{ height: "23px" }}
+							style={{ height: "23px", width: "auto" }}
 						/>
 					</div>
 					<div className="dataValue mb-2">{props.data.humidity}%</div>

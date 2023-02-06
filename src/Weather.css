@@ -74,6 +74,7 @@
 	margin-top: -10px;
 	margin-bottom: -20px;
 	height: 110px;
+	width: auto;
 }
 
 .Weather .loaderDots {
