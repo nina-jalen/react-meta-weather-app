@@ -63,7 +63,6 @@ export default function Weather(props) {
 							value=""
 							role="none"
 							title="Search"
-							aria-label="Search"
 						>
 							<FontAwesomeIcon
 								icon={faMagnifyingGlass}
