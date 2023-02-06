@@ -57,12 +57,7 @@ export default function Weather(props) {
 							autoFocus="on"
 							onChange={changeCity}
 						/>
-						<button
-							type="submit"
-							value=""
-							role="none"
-							aria-label="true"
-						>
+						<button type="submit" value="" role="none">
 							<FontAwesomeIcon
 								icon={faMagnifyingGlass}
 								className="buttonIcon"
