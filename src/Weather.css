@@ -4,10 +4,6 @@
 	padding: 25px 30px;
 }
 
-.Weather form {
-	display: flex;
-}
-
 .Weather input {
 	background-color: var(--background-color);
 	color: var(--light-color);
@@ -34,14 +30,11 @@
 	border-radius: 30px;
 	width: 50px;
 	height: 35px;
-	margin: 0;
-	padding: 0;
 	margin-left: 10px;
 }
 
 .Weather .buttonIcon {
 	color: var(--light-color);
-	display: block;
 	margin: 0 auto;
 	height: 20px;
 }
@@ -54,14 +47,12 @@
 
 .Weather footer {
 	color: var(--footer-color);
-	text-align: center;
 	font-size: 10px;
 	letter-spacing: 0.05em;
 }
 
 .Weather .webLink {
 	color: var(--footer-color);
-	text-decoration: none;
 }
 
 .Weather .webLink:hover {
@@ -82,15 +73,9 @@
 	margin-top: 150px;
 }
 
-@media (max-width: 342px) {
-	.Weather form {
-		flex-wrap: wrap;
-		justify-content: center;
-	}
-
+@media (max-width: 344px) {
 	.Weather button {
 		margin-top: 10px;
-		margin-left: 0 !important;
 	}
 }
 
@@ -121,6 +106,11 @@
 }
 
 @media (max-width: 436px) {
+	.Weather form {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
 	.Weather .forecastText {
 		font-size: 18px;
 		text-align: center;

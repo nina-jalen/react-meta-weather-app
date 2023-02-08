@@ -3,11 +3,8 @@ import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
 import axios from "axios";
 import "./Weather.css";
-// font awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// font awesome icons
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
-// loader
 import { MutatingDots } from "react-loader-spinner";
 
 export default function Weather(props) {
@@ -49,7 +46,7 @@ export default function Weather(props) {
 		return (
 			<div className="Weather">
 				<div className="weatherContainer">
-					<form onSubmit={handleSumbit}>
+					<form onSubmit={handleSumbit} className="d-flex">
 						<input
 							type="search"
 							placeholder="Search city"
@@ -66,15 +63,15 @@ export default function Weather(props) {
 						>
 							<FontAwesomeIcon
 								icon={faMagnifyingGlass}
-								className="buttonIcon"
+								className="d-block buttonIcon"
 							/>
 						</button>
 					</form>
 					<WeatherInfo data={weatherData} />
-					<div className="forecastText mt-1 mb-3">Next 6 Days</div>
+					<div className="mt-1 mb-3 forecastText">Next 6 Days</div>
 					<WeatherForecast coordinates={weatherData.coordinates} />
 				</div>
-				<footer>
+				<footer className="text-center">
 					<img
 						src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/024/977/original/Avatar_Idol-logos_transparent.png?1642341793"
 						alt="Logo"
@@ -85,7 +82,7 @@ export default function Weather(props) {
 						target="_blank"
 						rel="noreferrer"
 						title="GitHub profile"
-						className="webLink"
+						className="text-decoration-none webLink"
 					>
 						Open source code
 					</a>{" "}
@@ -95,7 +92,7 @@ export default function Weather(props) {
 						target="_blank"
 						rel="noreferrer"
 						title="Nina's webpage"
-						className="webLink"
+						className="text-decoration-none webLink"
 					>
 						Nina Jalen
 					</a>

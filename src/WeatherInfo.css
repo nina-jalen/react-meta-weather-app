@@ -1,7 +1,5 @@
 .WeatherInfo .cityName {
 	color: var(--light-color);
-	display: inline-block;
-	text-transform: capitalize;
 	font-size: 50px;
 	letter-spacing: 0.15em;
 }
@@ -21,7 +19,6 @@
 
 .WeatherInfo .weatherDescription {
 	color: var(--light-color);
-	text-transform: lowercase;
 	font-size: 16px;
 	line-height: 2;
 }
@@ -36,8 +33,6 @@
 	height: 100%;
 }
 
-/* temperature */
-
 .WeatherTemperature {
 	display: flex;
 }
@@ -48,13 +43,13 @@
 	line-height: 1.1;
 	letter-spacing: 0.03em;
 }
+
 /* celsius & fahrenheit */
 
 .WeatherTemperature-unit {
 	color: var(--light-color);
 	font-size: 25px;
 	line-height: 1.7;
-	text-decoration: none;
 }
 
 .WeatherTemperature a {
@@ -73,7 +68,6 @@
 
 .WeatherInfo .dataValue {
 	color: var(--light-color);
-	text-align: center;
 	font-size: 16px;
 	line-height: 1;
 	letter-spacing: 0.05em;
@@ -81,7 +75,6 @@
 
 .WeatherInfo .dataDescription {
 	color: var(--text-color);
-	text-align: center;
 	font-size: 14px;
 	line-height: 1;
 	letter-spacing: 0.03em;
@@ -91,12 +84,13 @@
 	.WeatherInfo .cityName {
 		margin-right: 0 !important;
 	}
-	.WeatherInfo .countryName {
-		display: none;
-	}
 }
 
 @media (max-width: 436px) {
+	.WeatherInfo .countryName {
+		display: none;
+	}
+
 	.WeatherInfo .row {
 		justify-content: center;
 	}
@@ -118,6 +112,10 @@
 		margin-bottom: 13px;
 	}
 
+	.WeatherInfo .weatherDescription {
+		display: none;
+	}
+
 	.WeatherInfo .WeatherIcon img {
 		height: 70px;
 	}
@@ -132,10 +130,6 @@
 
 	.WeatherTemperature a {
 		font-size: 20px;
-	}
-
-	.WeatherInfo .weatherDescription {
-		display: none;
 	}
 }
 

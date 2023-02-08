@@ -8,7 +8,9 @@ export default function WeatherInfo(props) {
 	return (
 		<div className="WeatherInfo">
 			{/* city */}
-			<h1 className="cityName mt-2 mb-1 me-1">{props.data.city}</h1>
+			<h1 className="mt-2 mb-1 me-1 d-inline-block text-capitalise cityName">
+				{props.data.city}
+			</h1>
 			<span className="countryName">{props.data.country}</span>
 			{/* date */}
 			<FormattedDate date={props.data.date} />
@@ -25,7 +27,7 @@ export default function WeatherInfo(props) {
 					/>
 				</div>
 				{/* current temperature & unit conversion */}
-				<div className="col-auto d-flex ms-3 p-0">
+				<div className="col-auto ms-3 p-0">
 					<WeatherTemperature celsius={props.data.temperature} />
 				</div>
 				{/* weather data */}
@@ -34,26 +36,28 @@ export default function WeatherInfo(props) {
 						<img
 							src={require(`./Icons/wind.png`)}
 							alt="Wind logo"
-							className="dataIcon my-2"
+							className="my-2 dataIcon"
 							style={{ height: "24px", width: "auto" }}
 						/>
 					</div>
-					<div className="dataValue mb-2">
+					<div className="text-center mb-2 dataValue">
 						{Math.round(props.data.wind * 0.001 * 3600)}km/h
 					</div>
-					<div className="dataDescription">Wind</div>
+					<div className="text-center dataDescription">Wind</div>
 				</div>
 				<div className="col-auto ms-3 p-0 weatherData">
 					<div>
 						<img
 							src={require(`./Icons/humidity.png`)}
 							alt="Humidity logo"
-							className="dataIcon my-2"
+							className="my-2 dataIcon"
 							style={{ height: "23px", width: "auto" }}
 						/>
 					</div>
-					<div className="dataValue mb-2">{props.data.humidity}%</div>
-					<div className="dataDescription">Humidity</div>
+					<div className="text-center mb-2 dataValue">
+						{props.data.humidity}%
+					</div>
+					<div className="text-center dataDescription">Humidity</div>
 				</div>
 			</div>
 		</div>

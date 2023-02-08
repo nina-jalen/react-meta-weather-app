@@ -48,7 +48,7 @@ export default function WeatherTemperature(props) {
 						°C
 					</a>
 				</span>
-				<span className="WeatherTemperature-unit ms-2">°F</span>
+				<span className="ms-2 WeatherTemperature-unit">°F</span>
 			</div>
 		);
 	}
