@@ -35,7 +35,6 @@
 
 .Weather .buttonIcon {
 	color: var(--light-color);
-	/* margin: 0 auto; */
 	width: 24px;
 }
 
@@ -90,7 +89,7 @@
 	}
 
 	.Weather button {
-		width: 45px;
+		min-width: 45px;
 		height: 30px;
 	}
 
