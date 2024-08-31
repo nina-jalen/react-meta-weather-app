@@ -96,16 +96,7 @@ export default function Weather(props) {
 					>
 						Open source code
 					</a>{" "}
-					by{" "}
-					<a
-						href="https://nina-jalen.github.io/"
-						target="_blank"
-						rel="noreferrer"
-						title="Nina's webpage"
-						className="text-decoration-none webLink"
-					>
-						Nina Jalen
-					</a>
+					by{" "} Nina Jalen
 				</footer>
 			</div>
 		);
