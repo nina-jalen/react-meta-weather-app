@@ -90,9 +90,9 @@ export default function Weather(props) {
 					<a
 						href="https://github.com/nina-jalen/react-meta-weather-app"
 						target="_blank"
-						rel="noreferrer"
 						title="GitHub profile"
 						className="text-decoration-none webLink"
+						rel="noopener noreferrer"
 					>
 						Open source code
 					</a>{" "}
