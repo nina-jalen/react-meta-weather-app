@@ -1,4 +1,4 @@
-# ⛅️ React Weather Forecast Application
+# ⛅️ React Weather Forecast Website Application
 
 This is a **React-based Web App** that provides live weather updates for cities around the world. It was built as a final project during the **SheCodes React Course** — showcasing modern React skills and seamless API integration.
 
