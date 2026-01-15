@@ -22,8 +22,9 @@ The React Weather Forecast App lets users search for weather information by city
 
 ## 💻 Technologies Used
 
-- **React** – UI library for building dynamic components  
-- **CSS** – Styling and responsive design  
+- **React** – UI library for building dynamic components
+- **CSS** – Styling and responsive design
+- **Bootstrap** – CSS framework     
 - **Weather API** – Real-time weather data integration  
 - **Netlify** – Hosting and deployment
 
