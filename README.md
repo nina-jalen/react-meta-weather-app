@@ -17,7 +17,7 @@ The React Weather Forecast App lets users search for weather information by city
 - 🌡️ **Detailed Info** – Temperature, wind speed, humidity, and more  
 - ⛅ **Weather Icons** – Visual cues for weather conditions
 - 📱 **Responsive Design** – Looks great and works well on phones, tablets, and desktop  
-- 📆 **7 Day Forecast** – Extended outlook  
+- 📆 **6-Day Forecast** – Extended outlook  
 - 📍 **Automatic Location Detection** – Use browser geolocation for local weather  
 
 ## 💻 Technologies Used
